@@ -3,87 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukund Venkatesh | Links</title>
+    <title>Mukund Venkatesh | Portfolio & Links</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #f3f4f6;
+            /* Modern, subtle gradient background */
+            --bg-gradient: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
             --card-bg: #ffffff;
             --text-main: #1f2937;
-            --btn-bg: #e5e7eb;
-            --btn-hover: #d1d5db;
+            --text-muted: #4b5563;
+            --btn-bg: #f9fafb;
+            --btn-border: #e5e7eb;
+            --btn-hover: #f3f4f6;
             --accent: #2563eb;
+            --accent-hover: #1d4ed8;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient);
             color: var(--text-main);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
+            box-sizing: border-box;
         }
         .container {
             background-color: var(--card-bg);
-            padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 24px;
+            /* Softer, more modern shadow */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             width: 100%;
-            max-width: 400px;
+            max-width: 480px;
             text-align: center;
         }
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
-            border: 3px solid var(--accent);
+            border: 4px solid white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        h1 { margin: 0 0 10px 0; font-size: 24px; }
-        p { margin: 0 0 30px 0; color: #6b7280; font-size: 16px; }
-        
+        h1 { 
+            margin: 0 0 5px 0; 
+            font-size: 28px; 
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .subtitle { 
+            margin: 0 0 20px 0; 
+            color: var(--accent); 
+            font-size: 16px; 
+            font-weight: 600;
+        }
+        .bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin: 0 0 30px 0;
+            padding: 0 10px;
+        }
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
         .link-btn {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             width: 100%;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 16px;
             background-color: var(--btn-bg);
             color: var(--text-main);
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 12px;
+            border: 1px solid var(--btn-border);
             font-weight: 600;
-            transition: all 0.2s ease;
+            font-size: 16px;
+            transition: all 0.3s ease;
             box-sizing: border-box;
         }
         .link-btn:hover {
             background-color: var(--btn-hover);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-color: #d1d5db;
         }
         .primary-btn {
             background-color: var(--accent);
             color: white;
+            border: none;
         }
         .primary-btn:hover {
-            background-color: #1d4ed8;
+            background-color: var(--accent-hover);
+        }
+        .icon {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Replace the src URL with a link to your actual photo -->
-        <img src="profile1.jpg" alt="Profile Picture" class="profile-img">
+        <img src="profile1.jpg" alt="Mukund Venkatesh" class="profile-img">
         
         <h1>Mukund Venkatesh</h1>
-        <p>Software Engineer | Data Science</p>
+        <p class="subtitle">Computer & Data Science @ Purdue</p>
 
-        <!-- Update these links -->
-        <a href="Mukund_Venkatesh_2026.pdf" class="link-btn primary-btn" target="_blank">📄 View Resume</a>
-        <a href="https://linkedin.com/in/mukund-venkatesh" class="link-btn" target="_blank">💼 LinkedIn</a>
-        <a href="https://github.com/Mukund676" class="link-btn" target="_blank">💻 GitHub</a>
-        <a href="mukund06.venkatesh@gmail.com" class="link-btn">✉️ Contact Me</a>
+        <p class="bio">
+            Focusing on machine learning and artificial intelligence in industry. With experience across the complete ML lifecycle, I have developed deep learning algorithms for flight trajectory prediction and built AI-powered enterprise tools.
+        </p>
+
+        <div class="links-grid">
+            <a href="Mukund_Venkatesh_2026.pdf" class="link-btn primary-btn" target="_blank">
+                <i class="fas fa-file-alt icon"></i> View Resume
+            </a>
+            <a href="https://linkedin.com/in/mukund-venkatesh" class="link-btn" target="_blank">
+                <i class="fab fa-linkedin icon" style="color: #0A66C2;"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Mukund676" class="link-btn" target="_blank">
+                <i class="fab fa-github icon"></i> GitHub
+            </a>
+            <a href="mailto:mukund06.venkatesh@gmail.com" class="link-btn">
+                <i class="fas fa-envelope icon" style="color: #EA4335;"></i> Contact Me
+            </a>
+        </div>
     </div>
 
 </body>
