@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukund Venkatesh | Links</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --btn-bg: #e5e7eb;
+            --btn-hover: #d1d5db;
+            --accent: #2563eb;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid var(--accent);
+        }
+        h1 { margin: 0 0 10px 0; font-size: 24px; }
+        p { margin: 0 0 30px 0; color: #6b7280; font-size: 16px; }
+        
+        .link-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: var(--btn-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+        .link-btn:hover {
+            background-color: var(--btn-hover);
+            transform: translateY(-2px);
+        }
+        .primary-btn {
+            background-color: var(--accent);
+            color: white;
+        }
+        .primary-btn:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Replace the src URL with a link to your actual photo -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+        
+        <h1>Mukund Venkatesh</h1>
+        <p>Software Engineer | Data Science</p>
+
+        <!-- Update these links -->
+        <a href="YOUR_RESUME_PDF_LINK_HERE" class="link-btn primary-btn" target="_blank">📄 View Resume</a>
+        <a href="https://linkedin.com/in/mukund-venkatesh" class="link-btn" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/Mukund676" class="link-btn" target="_blank">💻 GitHub</a>
+        <a href="mukund06.venkatesh@gmail.com" class="link-btn">✉️ Contact Me</a>
+    </div>
+
+</body>
+</html>
